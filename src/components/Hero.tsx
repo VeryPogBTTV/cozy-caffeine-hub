@@ -18,11 +18,11 @@ const Hero = () => {
         </div>
 
         <p className="text-coffee-text text-xl sm:text-2xl mt-8 max-w-2xl mx-auto">
-          Experience the perfect blend of artisanal coffee in every cup
+          Испытайте идеальное сочетание ремесленного кофе в каждой чашке
         </p>
         
         <button className="mt-8 px-8 py-3 bg-coffee-primary text-white rounded-full hover:bg-coffee-primary/90 transition-colors">
-          View Menu
+          Посмотреть меню
         </button>
       </div>
     </div>
