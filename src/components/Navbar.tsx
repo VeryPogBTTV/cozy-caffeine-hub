@@ -14,10 +14,10 @@ const Navbar = () => {
           
           {/* Desktop Menu */}
           <div className="hidden sm:flex sm:items-center">
-            <a href="#" className="px-3 py-2 text-coffee-text hover:text-coffee-primary">Home</a>
-            <a href="#menu" className="px-3 py-2 text-coffee-text hover:text-coffee-primary">Menu</a>
-            <a href="#about" className="px-3 py-2 text-coffee-text hover:text-coffee-primary">About</a>
-            <a href="#contact" className="px-3 py-2 text-coffee-text hover:text-coffee-primary">Contact</a>
+            <a href="#" className="px-3 py-2 text-coffee-text hover:text-coffee-primary">Главная</a>
+            <a href="#menu" className="px-3 py-2 text-coffee-text hover:text-coffee-primary">Меню</a>
+            <a href="#about" className="px-3 py-2 text-coffee-text hover:text-coffee-primary">О нас</a>
+            <a href="#contact" className="px-3 py-2 text-coffee-text hover:text-coffee-primary">Контакты</a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -36,10 +36,10 @@ const Navbar = () => {
       {isOpen && (
         <div className="sm:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1">
-            <a href="#" className="block px-3 py-2 text-coffee-text hover:text-coffee-primary">Home</a>
-            <a href="#menu" className="block px-3 py-2 text-coffee-text hover:text-coffee-primary">Menu</a>
-            <a href="#about" className="block px-3 py-2 text-coffee-text hover:text-coffee-primary">About</a>
-            <a href="#contact" className="block px-3 py-2 text-coffee-text hover:text-coffee-primary">Contact</a>
+            <a href="#" className="block px-3 py-2 text-coffee-text hover:text-coffee-primary">Главная</a>
+            <a href="#menu" className="block px-3 py-2 text-coffee-text hover:text-coffee-primary">Меню</a>
+            <a href="#about" className="block px-3 py-2 text-coffee-text hover:text-coffee-primary">О нас</a>
+            <a href="#contact" className="block px-3 py-2 text-coffee-text hover:text-coffee-primary">Контакты</a>
           </div>
         </div>
       )}
