@@ -2,6 +2,17 @@ import React from "react";
 import Navbar from "../components/Navbar";
 
 const About = () => {
+  const scaFlavors = [
+    "Фруктовый",
+    "Ореховый",
+    "Шоколадный",
+    "Карамельный",
+    "Пряный",
+    "Цветочный",
+    "Травяной",
+    "Цитрусовый"
+  ];
+
   return (
     <div className="min-h-screen bg-coffee-background">
       <Navbar />
@@ -46,6 +57,34 @@ const About = () => {
             <p className="text-sm text-coffee-text mt-2 italic">
               Источник: Specialty Coffee Association (SCA)
             </p>
+          </div>
+        </div>
+
+        {/* New section below About Us */}
+        <div className="mt-16 bg-white rounded-lg shadow-lg p-8">
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-lg text-coffee-text leading-relaxed mb-8">
+              Здесь мы верим в то, что идеальная чашка кофе — это сочетание высококачественных зерен, 
+              мастерства бариста и уютной атмосферы. Мы используем только лучшие сорта кофе, и наши 
+              бариста с удовольствием помогут вам выбрать напиток по вашему вкусу. Посетите нас и 
+              убедитесь сами!
+            </p>
+
+            <div className="mt-8">
+              <h3 className="text-xl font-semibold text-coffee-primary mb-4">
+                Основные вкусовые профили нашего кофе
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {scaFlavors.map((flavor, index) => (
+                  <div 
+                    key={index}
+                    className="bg-coffee-background p-3 rounded-md text-coffee-text hover:bg-coffee-primary hover:text-white transition-colors duration-300"
+                  >
+                    {flavor}
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
