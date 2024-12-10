@@ -1,29 +1,28 @@
+import { Link } from "react-router-dom";
+
 const Hero = () => {
   return (
-    <div className="bg-coffee-background min-h-[80vh] flex items-center justify-center relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="relative">
-          {/* Yellow accent line */}
-          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-coffee-accent"></div>
-          
-          {/* Coffee text shaped like a cup */}
-          <h1 className="text-coffee-primary text-6xl sm:text-8xl font-bold mb-8 mt-4">
-            COFFEE
+    <div className="relative bg-coffee-primary text-white py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
+            Добро пожаловать в наше кафе
           </h1>
-          
-          {/* Animated steam effect */}
-          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
-            <div className="w-1 h-6 bg-coffee-accent rounded-full animate-coffee-steam"></div>
+          <p className="mt-6 text-xl text-gray-300 max-w-3xl mx-auto">
+            Откройте для себя мир изысканного кофе и уютной атмосферы
+          </p>
+          <div className="mt-10">
+            <Link
+              to="/#menu"
+              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-coffee-primary bg-coffee-accent hover:bg-yellow-600 transition-colors"
+            >
+              Посмотреть меню
+            </Link>
           </div>
         </div>
-
-        <p className="text-coffee-text text-xl sm:text-2xl mt-8 max-w-2xl mx-auto">
-          Испытайте идеальное сочетание ремесленного кофе в каждой чашке
-        </p>
-        
-        <button className="mt-8 px-8 py-3 bg-coffee-primary text-white rounded-full hover:bg-coffee-primary/90 transition-colors">
-          Посмотреть меню
-        </button>
+      </div>
+      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
+        <div className="w-4 h-8 bg-coffee-accent animate-coffee-steam opacity-50"></div>
       </div>
     </div>
   );

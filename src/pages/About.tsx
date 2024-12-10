@@ -39,7 +39,7 @@ const About = () => {
               наши бариста могли точно определить и передать вкусовой профиль каждого сорта кофе.
             </p>
             <img 
-              src="/coffee-flavor-wheel.png" 
+              src="/lovable-uploads/11ae4c06-64ce-4bfa-8a34-14c2cc2a1b7c.png" 
               alt="SCA Coffee Flavor Wheel" 
               className="w-full rounded-lg shadow-lg"
             />
