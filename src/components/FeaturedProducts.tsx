@@ -5,7 +5,7 @@ const products = [
     description: "Классический итальянский кофе",
     price: "₽60",
     weight: "99г",
-    image: "/lovable-uploads/7dbe2750-2854-48e2-9427-3ed28b07b63a.png"
+    image: "/lovable-uploads/8f52e8eb-6544-43b3-a79d-9ee23ba1c001.png"
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const products = [
     description: "Эспрессо с молочной пенкой",
     price: "₽209",
     weight: "340г",
-    image: "/lovable-uploads/eb60e16e-b580-485b-a86d-95422e7dc461.png"
+    image: "/lovable-uploads/15ffcaf2-4f3e-40de-b922-494393cd679b.png"
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const products = [
     description: "Кофе с молоком и нежной пенкой",
     price: "₽209",
     weight: "340г",
-    image: "/lovable-uploads/7dbe2750-2854-48e2-9427-3ed28b07b63a.png"
+    image: "/lovable-uploads/15ffcaf2-4f3e-40de-b922-494393cd679b.png"
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ const products = [
     description: "Двойной эспрессо с молоком",
     price: "₽199",
     weight: "250г",
-    image: "/lovable-uploads/7dbe2750-2854-48e2-9427-3ed28b07b63a.png"
+    image: "/lovable-uploads/15ffcaf2-4f3e-40de-b922-494393cd679b.png"
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ const products = [
     description: "Свежая домашняя выпечка",
     price: "₽149",
     weight: "50г",
-    image: "/lovable-uploads/262f7b91-4ca1-4327-9701-3bc909f28926.png"
+    image: "/lovable-uploads/f600dd2d-db7f-46f1-8af6-55b783cb7ca0.png"
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ const products = [
     description: "Французский десерт с кремом",
     price: "₽109",
     weight: "60г",
-    image: "/lovable-uploads/262f7b91-4ca1-4327-9701-3bc909f28926.png"
+    image: "/lovable-uploads/6b63213a-c6b7-4545-994d-6108da9396fe.png"
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ const products = [
     description: "Печенье с кусочками шоколада",
     price: "₽99",
     weight: "60г",
-    image: "/lovable-uploads/262f7b91-4ca1-4327-9701-3bc909f28926.png"
+    image: "/lovable-uploads/f600dd2d-db7f-46f1-8af6-55b783cb7ca0.png"
   },
   {
     id: 9,
