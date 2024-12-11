@@ -21,7 +21,7 @@ const products = [
     description: "Эспрессо с молочной пенкой",
     price: "₽209",
     weight: "340г",
-    image: "/lovable-uploads/15ffcaf2-4f3e-40de-b922-494393cd679b.png"
+    image: "/lovable-uploads/1724ee80-84c8-434e-b270-a91711ed59e4.png"
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const products = [
     description: "Кофе с молоком и нежной пенкой",
     price: "₽209",
     weight: "340г",
-    image: "/lovable-uploads/15ffcaf2-4f3e-40de-b922-494393cd679b.png"
+    image: "/lovable-uploads/ffbc3834-f737-4e4f-bf24-19406cd57ad8.png"
   },
   {
     id: 5,
@@ -61,7 +61,7 @@ const products = [
     description: "Печенье с кусочками шоколада",
     price: "₽99",
     weight: "60г",
-    image: "/lovable-uploads/f600dd2d-db7f-46f1-8af6-55b783cb7ca0.png"
+    image: "/lovable-uploads/350bd96a-6f2e-45ca-8b95-1a14bdd20d57.png"
   },
   {
     id: 9,
