@@ -1,16 +1,45 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card";
 
 const About = () => {
   const scaFlavors = [
-    "Фруктовый",
-    "Ореховый",
-    "Шоколадный",
-    "Карамельный",
-    "Пряный",
-    "Цветочный",
-    "Травяной",
-    "Цитрусовый"
+    {
+      name: "Фруктовый",
+      description: "Фруктовые нотки в кофе часто встречаются в зернах, произрастающих в странах Африки (например, Эфиопия и Кения). Эти профили характеризуются яркой кислотностью и свежими, сочными оттенками, напоминающими вкусы ягод, цитрусовых или фруктов."
+    },
+    {
+      name: "Ореховый",
+      description: "Ореховые нотки придают кофе теплоту и сладость. Эти профили часто встречаются в кофе из Центральной и Южной Америки (например, в Бразилии и Колумбии)."
+    },
+    {
+      name: "Шоколадный",
+      description: "Шоколадные нотки — одни из самых популярных вкусовых характеристик кофе. Они часто присутствуют в кофе из Латинской Америки и придают напитку насыщенность и сладость."
+    },
+    {
+      name: "Карамельный",
+      description: "Карамельный указывает на сладкие, карамельные ноты, часто связанные с легкой обжарки кофе и присущей ей сладостью. Эта сладость может быть как мягкой и сливочной, так и более интенсивной и почти жженой."
+    },
+    {
+      name: "Пряный",
+      description: "Пряные нотки добавляют кофе глубину и сложность, их можно найти в зернах, выращенных в Индонезии, Индии и Йемене."
+    },
+    {
+      name: "Цветочный",
+      description: "Цветочные нотки добавляют в кофе легкость и изысканность. Чаще всего их можно встретить в зернах светлой обжарки из Восточной Африки и Йемена."
+    },
+    {
+      name: "Травяной",
+      description: "Травяной указывает на присутствие землистых, немного горьковатых и пряных нот. Это могут быть нюансы зеленого чая, сена, или даже более специфических трав, таких как мята или тимьян (в зависимости от степени обжарки и сорта кофе)."
+    },
+    {
+      name: "Цитрусовый",
+      description: "Цитрусовый говорит о ярких кислых нотах, напоминающих различные цитрусовые фрукты. Это могут быть ноты лимона, лайма, грейпфрута или даже более сладких цитрусов, таких как апельсин или мандарин. Кислотность может быть как высокой, так и умеренной."
+    }
   ];
 
   return (
@@ -60,7 +89,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* New section below About Us */}
         <div className="mt-16 bg-white rounded-lg shadow-lg p-8">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-lg text-coffee-text leading-relaxed mb-8">
@@ -76,12 +104,23 @@ const About = () => {
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {scaFlavors.map((flavor, index) => (
-                  <div 
-                    key={index}
-                    className="bg-coffee-background p-3 rounded-md text-coffee-text hover:bg-coffee-primary hover:text-white transition-colors duration-300"
-                  >
-                    {flavor}
-                  </div>
+                  <HoverCard key={index}>
+                    <HoverCardTrigger asChild>
+                      <div 
+                        className="bg-coffee-background p-3 rounded-md text-coffee-text hover:bg-coffee-primary hover:text-white transition-colors duration-300 cursor-pointer"
+                      >
+                        {flavor.name}
+                      </div>
+                    </HoverCardTrigger>
+                    <HoverCardContent className="w-80">
+                      <div className="space-y-2">
+                        <h4 className="text-sm font-semibold">{flavor.name}</h4>
+                        <p className="text-sm text-muted-foreground">
+                          {flavor.description}
+                        </p>
+                      </div>
+                    </HoverCardContent>
+                  </HoverCard>
                 ))}
               </div>
             </div>
