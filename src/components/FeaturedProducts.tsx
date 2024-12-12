@@ -87,11 +87,11 @@ const FeaturedProducts = () => {
               key={product.id}
               className="bg-coffee-background rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="h-48 overflow-hidden">
+              <div className="relative h-48 w-full">
                 <img 
                   src={product.image} 
                   alt={product.name}
-                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+                  className="absolute inset-0 w-full h-full object-contain p-4"
                 />
               </div>
               <div className="p-6">
