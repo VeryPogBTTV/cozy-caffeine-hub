@@ -18,7 +18,7 @@ const Navbar = () => {
             <Link to="/" className="px-3 py-2 text-coffee-text hover:text-coffee-primary">Главная</Link>
             <Link to="/about" className="px-3 py-2 text-coffee-text hover:text-coffee-primary">О нас</Link>
             <a href="#menu" className="px-3 py-2 text-coffee-text hover:text-coffee-primary">Меню</a>
-            <a href="#contact" className="px-3 py-2 text-coffee-text hover:text-coffee-primary">Контакты</a>
+            <Link to="/contacts" className="px-3 py-2 text-coffee-text hover:text-coffee-primary">Контакты</Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -40,7 +40,7 @@ const Navbar = () => {
             <Link to="/" className="block px-3 py-2 text-coffee-text hover:text-coffee-primary">Главная</Link>
             <Link to="/about" className="block px-3 py-2 text-coffee-text hover:text-coffee-primary">О нас</Link>
             <a href="#menu" className="block px-3 py-2 text-coffee-text hover:text-coffee-primary">Меню</a>
-            <a href="#contact" className="block px-3 py-2 text-coffee-text hover:text-coffee-primary">Контакты</a>
+            <Link to="/contacts" className="block px-3 py-2 text-coffee-text hover:text-coffee-primary">Контакты</Link>
           </div>
         </div>
       )}
