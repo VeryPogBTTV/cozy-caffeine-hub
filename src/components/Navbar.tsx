@@ -17,7 +17,6 @@ const Navbar = () => {
           <div className="hidden sm:flex sm:items-center">
             <Link to="/" className="px-3 py-2 text-coffee-text hover:text-coffee-primary">Главная</Link>
             <Link to="/about" className="px-3 py-2 text-coffee-text hover:text-coffee-primary">О нас</Link>
-            <a href="#menu" className="px-3 py-2 text-coffee-text hover:text-coffee-primary">Меню</a>
             <Link to="/contacts" className="px-3 py-2 text-coffee-text hover:text-coffee-primary">Контакты</Link>
           </div>
 
@@ -39,7 +38,6 @@ const Navbar = () => {
           <div className="px-2 pt-2 pb-3 space-y-1">
             <Link to="/" className="block px-3 py-2 text-coffee-text hover:text-coffee-primary">Главная</Link>
             <Link to="/about" className="block px-3 py-2 text-coffee-text hover:text-coffee-primary">О нас</Link>
-            <a href="#menu" className="block px-3 py-2 text-coffee-text hover:text-coffee-primary">Меню</a>
             <Link to="/contacts" className="block px-3 py-2 text-coffee-text hover:text-coffee-primary">Контакты</Link>
           </div>
         </div>
