@@ -13,7 +13,7 @@ const products = [
     description: "Освежающий напиток",
     price: "₽129",
     weight: "340г",
-    image: "/lovable-uploads/cd8af56f-4453-447b-9e52-af3914da5a97.png"
+    image: "/lovable-uploads/55b66ab5-21cf-494c-b55a-f51e11452f39.png"
   },
   {
     id: 3,
