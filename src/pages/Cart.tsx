@@ -1,19 +1,40 @@
 import { useCart } from '../context/CartContext';
 import { Button } from '../components/ui/button';
 import Navbar from '../components/Navbar';
+import { useNavigate } from 'react-router-dom';
+import { ChevronLeft } from 'lucide-react';
 
 const Cart = () => {
   const { items, removeFromCart, updateQuantity } = useCart();
+  const navigate = useNavigate();
 
   const total = items.reduce((sum, item) => {
     const price = parseFloat(item.price.replace('₽', ''));
     return sum + price * item.quantity;
   }, 0);
 
+  const handleBack = () => {
+    navigate('/');
+    setTimeout(() => {
+      const menuElement = document.getElementById('menu');
+      if (menuElement) {
+        menuElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
+
   return (
     <div className="min-h-screen bg-coffee-background">
       <Navbar />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <Button 
+          variant="ghost" 
+          className="mb-8 text-coffee-primary hover:text-coffee-primary/80"
+          onClick={handleBack}
+        >
+          <ChevronLeft className="mr-2 h-4 w-4" />
+          Назад к меню
+        </Button>
         <h1 className="text-3xl font-bold text-coffee-primary mb-8">Корзина</h1>
         {items.length === 0 ? (
           <p className="text-coffee-text">Ваша корзина пуста</p>

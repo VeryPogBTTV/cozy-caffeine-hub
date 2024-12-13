@@ -136,7 +136,6 @@ const ProductDetails = () => {
 
   const handleBack = () => {
     navigate('/');
-    // Use setTimeout to ensure navigation completes before scrolling
     setTimeout(() => {
       const menuElement = document.getElementById('menu');
       if (menuElement) {
@@ -159,11 +158,13 @@ const ProductDetails = () => {
         </Button>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="relative h-96">
-            <img 
-              src={product.image} 
-              alt={product.name}
-              className="absolute inset-0 w-full h-full object-contain"
-            />
+            <div className="absolute inset-0 bg-white rounded-lg shadow-lg p-4">
+              <img 
+                src={product.image} 
+                alt={product.name}
+                className="w-full h-full object-contain"
+              />
+            </div>
           </div>
           <div className="space-y-6">
             <h1 className="text-3xl font-bold text-coffee-primary">{product.name}</h1>
