@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const products = [
   {
     id: 1,
@@ -83,7 +85,8 @@ const FeaturedProducts = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {products.map((product) => (
-            <div 
+            <Link 
+              to={`/product/${product.id}`}
               key={product.id}
               className="bg-coffee-background rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
@@ -110,7 +113,7 @@ const FeaturedProducts = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
