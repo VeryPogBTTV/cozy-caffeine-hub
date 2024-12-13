@@ -134,6 +134,17 @@ const ProductDetails = () => {
     setQuantity(prev => Math.max(1, prev - 1));
   };
 
+  const handleBack = () => {
+    navigate('/');
+    // Use setTimeout to ensure navigation completes before scrolling
+    setTimeout(() => {
+      const menuElement = document.getElementById('menu');
+      if (menuElement) {
+        menuElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
+
   return (
     <div className="min-h-screen bg-coffee-background">
       <Navbar />
@@ -141,7 +152,7 @@ const ProductDetails = () => {
         <Button 
           variant="ghost" 
           className="mb-8 text-coffee-primary hover:text-coffee-primary/80"
-          onClick={() => navigate('/menu')}
+          onClick={handleBack}
         >
           <ChevronLeft className="mr-2 h-4 w-4" />
           Назад к меню
